@@ -1486,7 +1486,7 @@ This project demonstrates practical experience in:
 - Interactive Slicers
 - Conditional Formatting
 - Sparklines
-- IFERROR()
+- Formulas
 - Dashboard Design
 - Data Modelling
 
@@ -1554,9 +1554,11 @@ I'm passionate about transforming raw data into meaningful business insights and
 
 If you have feedback, suggestions or opportunities to collaborate, I'd be happy to connect.
 
-**LinkedIn:** *(Add your profile link here)*
+🔗 **LinkedIn:** [Elisha Bassey](https://www.linkedin.com/in/elisha-bassey/)
 
-**Portfolio:** *(Add your portfolio website if available)*
+🌐 **Portfolio:** [elishabassey.netlify.app](https://elishabassey.netlify.app)
+
+📧 Feel free to reach out, I'm always open to learning, collaboration, and new opportunities.
 
 ---
 
