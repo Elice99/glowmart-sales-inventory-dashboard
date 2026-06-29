@@ -2,7 +2,7 @@
 
 > An executive-level Microsoft Excel dashboard built to investigate an inventory allocation dispute using three years of sales data, customer behaviour and profitability analysis.
 
-![Dashboard Overview](Images/Overview.png)
+![Dashboard Overview](Overview.png)
 
 ---
 
@@ -90,7 +90,9 @@ Rather than recommending inventory redistribution, the analysis suggests focusin
 ## Dashboard Preview
 
 The project consists of three interconnected dashboards designed for different decision makers.
-
+![Dashboard Overview](Overview.png)
+![Dashboard Overview](Deepdive.png)
+![Dashboard Overview](Customer.png)
 ---
 
 # 🎯 Project Objectives
@@ -176,6 +178,7 @@ The dataset captures sales activity across multiple cities, brands, customers an
 Instead of analysing one large spreadsheet, the project was organised using a simple relational data model.
 
 This approach improves scalability, simplifies reporting and follows Business Intelligence best practices.
+![Dashboard Overview](Model.png)
 
 ### Fact Table
 
@@ -193,6 +196,7 @@ It contains measures such as:
 - Cost of Goods Sold (COGS)
 - Gross Profit
 - Discount
+![Dashboard Overview](Table1.png)
 
 ---
 
@@ -210,6 +214,7 @@ Contains customer information including:
 - City
 
 Used for customer segmentation and behavioural analysis.
+![Dashboard Overview](Table4.png)
 
 ---
 
@@ -222,6 +227,7 @@ Contains product information including:
 - Category
 
 Used for brand-level reporting and profitability analysis.
+![Dashboard Overview](Table2.png)
 
 ---
 
@@ -237,6 +243,7 @@ Additional fields were derived including:
 - Month Name
 
 This enabled Year-over-Year analysis, quarterly reporting and monthly trend analysis.
+![Dashboard Overview](Table3.png)
 
 ---
 
@@ -388,7 +395,7 @@ Every KPI contributes to understanding the company's operational performance.
 **Formula**
 
 ```text
-SUM(Total Sales)
+SUM(Sales[Total_sale])
 ```
 
 **Result**
@@ -412,7 +419,7 @@ This KPI serves as the starting point for evaluating profitability, growth and o
 **Formula**
 
 ```text
-COUNT(Sales ID)
+COUNTA(Sales[SalesID])
 ```
 
 **Result**
@@ -432,7 +439,7 @@ Tracking the number of completed transactions provides context for purchasing be
 **Formula**
 
 ```text
-DISTINCTCOUNT(Customer ID)
+DISTINCTCOUNT(Sales[Customer ID])
 ```
 
 **Result**
@@ -476,7 +483,7 @@ One of the key findings of this project was that this relationship did not exist
 **Formula**
 
 ```text
-SUM(Quantity)
+SUM(Sales[Quantity])
 ```
 
 **Result**
@@ -582,7 +589,7 @@ Transactions per Customer measures customer engagement and purchasing frequency.
 **Formula**
 
 ```text
-SUM(Discount Amount)
+SUM(Sales[Discount Amount])
 ```
 
 **Result**
@@ -662,6 +669,7 @@ An executive should be able to understand the overall business situation in less
 - Monthly Revenue Trend
 - Executive Insight Panel
 
+![Dashboard Overview](Overview.png)
 ---
 
 ## 📄 Dashboard 2 — Brand & City Deep Dive
@@ -684,6 +692,7 @@ It allows operational managers to identify where performance differs and where i
 - City Year-over-Year Performance
 - Operational Insight Panel
 
+![Dashboard Overview](Deepdive.png)
 ---
 
 ## 📄 Dashboard 3 — Customer & Efficiency
@@ -706,6 +715,7 @@ It combines customer behaviour, pricing efficiency and executive recommendations
 - Discount vs Average Order Value
 - Strategic Recommendations
 
+![Dashboard Overview](Customer.png)
 ---
 
 # 📊 Visualisation Strategy
@@ -1524,13 +1534,15 @@ GlowMart-Sales-Inventory-Intelligence-Dashboard/
 ├── 📄 README.md
 ├── 📊 GlowMart Dashboard.xlsx
 ├── 📑 SkillAhead Challenge Brief.pdf
-│
-├── Images/
-│   ├── Overview Dashboard.png
-│   ├── Deep Dive Dashboard.png
-│   ├── Customer Dashboard.png
-│   └── Dashboard Preview.png
-│
+
+├── Overview Dashboard.png
+├── Deep Dive Dashboard.png
+├── Customer Dashboard.png
+├── Model.png
+├── Table1.png
+├── Table2.png
+├── Table3.png
+├── Table4.png
 └── LICENSE
 ```
 
